@@ -13,7 +13,7 @@
               variant="info"
             >
               <b-navbar-brand href="#">
-                WATER BAR
+                AIR BAR
               </b-navbar-brand>
               <b-navbar-toggle target="nav-collapse" />
               <b-collapse
