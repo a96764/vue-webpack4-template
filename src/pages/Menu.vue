@@ -1,10 +1,10 @@
 <template>
-<p>Menu under construction.</p>
-<ul>
+  <p>Menu under construction.</p>
+  <ul>
     <li v-for="product in menu">
-        {{ product.name }}
+      {{ product.name }}
     </li>
-</ul>
+  </ul>
 </template>
 
 <script>
