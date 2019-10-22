@@ -1,10 +1,12 @@
 <template>
-  <p>Menu under construction.</p>
-  <ul>
-    <li v-for="product in menu">
-      {{ product.name }}
-    </li>
-  </ul>
+    <ul>
+      <li
+        v-for="product in menu"
+        :key="product"
+      >
+        {{ product.name }}
+      </li>
+    </ul>
 </template>
 
 <script>
