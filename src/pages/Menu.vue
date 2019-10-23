@@ -1,12 +1,12 @@
 <template>
-    <ul>
-      <li
-        v-for="product in menu"
-        :key="product"
-      >
-        {{ product.name }}
-      </li>
-    </ul>
+  <ul>
+    <li
+      v-for="product in menu"
+      :key="product"
+    >
+      {{ product.name }}
+    </li>
+  </ul>
 </template>
 
 <script>
