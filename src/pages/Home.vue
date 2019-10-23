@@ -9,7 +9,7 @@
     </b-alert>
 
     <b-button
-      variant="danger"
+      variant="warning"
       class="m-1"
       @click="showDismissibleAlert=true"
     >
