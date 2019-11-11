@@ -12,9 +12,7 @@
               type="dark"
               variant="dark"
             >
-              <b-navbar-brand href="#">
-                AIR BAR
-              </b-navbar-brand>
+              
               <b-navbar-toggle target="nav-collapse" />
               <b-collapse
                 id="nav-collapse"
@@ -27,18 +25,70 @@
                   >
                     HOME
                   </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  >
+                    
+                  </b-link>
+
                   <b-link
                     to="/about"
                     router-tag="b-nav-item"
                   >
                     ABOUT
                   </b-link>
+
                   <b-link
-                    to="/menu"
+                    to="/"
                     router-tag="b-nav-item"
                   >
-                    MENU
+                    
                   </b-link>
+
+                  <b-link
+                    to="/programs"
+                    router-tag="b-nav-item"
+                  >
+                    PROGRAMS
+                  </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  >
+                    
+                  </b-link>
+
+                  <b-link
+                    to="/nutrition"
+                    router-tag="b-nav-item"
+                  >
+                    NUTRITION
+                  </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  >
+                    
+                  </b-link>
+
+                  <b-link
+                    to="/bookings"
+                    router-tag="b-nav-item"
+                  >
+                    BOOKINGS
+                  </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  >
+                    
+                  </b-link>
+
                   <b-link
                     to="/contact"
                     router-tag="b-nav-item"
@@ -46,12 +96,6 @@
                     CONTACT
                   </b-link>
 
-                  <b-link
-                    to="/login"
-                    router-tag="b-nav-item"
-                  >
-                    LOGIN
-                  </b-link>
                 </b-navbar-nav>
               </b-collapse>
             </b-navbar>

@@ -3,10 +3,10 @@ import Router from 'vue-router'
 
 import Home from 'pages/Home'
 import About from 'pages/About'
-import Menu from 'pages/Menu'
-import Contact from 'pages/Contact'
-import Login from 'pages/Login'
 import Programs from 'pages/Programs'
+import Nutrition from 'pages/Nutrition'
+import Bookings from 'pages/Bookings'
+import Contact from 'pages/Contact'
 
 Vue.use(Router)
 
@@ -21,24 +21,24 @@ const routes = [
   },
 
   {
-    path: '/menu',
-    component: Menu
+    path: '/programs',
+    component: Programs
+  },
+
+  {
+      path: '/nutrition',
+      component: Nutrition
+  },
+
+  {
+    path: '/bookings',
+    component: Bookings
   },
 
   {
     path: '/contact',
     component: Contact
   },
-
-  {
-    path: '/login',
-    component: Login
-  },
-
-  {
-    path: '/programs',
-    component: Programs  
-  }
 
 ]
 
