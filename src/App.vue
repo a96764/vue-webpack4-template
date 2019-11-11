@@ -10,7 +10,7 @@
             <b-navbar
               toggleable="lg"
               type="dark"
-              variant="info"
+              variant="dark"
             >
               <b-navbar-brand href="#">
                 AIR BAR
@@ -44,6 +44,13 @@
                     router-tag="b-nav-item"
                   >
                     CONTACT
+                  </b-link>
+
+                  <b-link
+                    to="/login"
+                    router-tag="b-nav-item"
+                  >
+                    LOGIN
                   </b-link>
                 </b-navbar-nav>
               </b-collapse>
