@@ -1,11 +1,11 @@
 <template>
   <div>
-    <li
-      v-for="program in programs"
-      :key="program"
-    >
-      <div>
-        <b-card-group deck>
+    <b-container>
+      <b-row>
+        <b-col-6
+          v-for="program in programs"
+          :key="program"
+        >
           <b-card
             :title="program.name"
             :img-src="program.img"
@@ -16,9 +16,11 @@
               {{ program.text }}
             </b-card-text>
           </b-card>
-        </b-card-group>
-      </div>
-    </li>
+          </b-vol-4>
+          <b-row />
+        </b-col-6>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
