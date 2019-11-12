@@ -12,7 +12,6 @@
               type="dark"
               variant="dark"
             >
-              
               <b-navbar-toggle target="nav-collapse" />
               <b-collapse
                 id="nav-collapse"
@@ -29,9 +28,7 @@
                   <b-link
                     to="/"
                     router-tag="b-nav-item"
-                  >
-                    
-                  </b-link>
+                  />
 
                   <b-link
                     to="/about"
@@ -43,9 +40,7 @@
                   <b-link
                     to="/"
                     router-tag="b-nav-item"
-                  >
-                    
-                  </b-link>
+                  />
 
                   <b-link
                     to="/programs"
@@ -57,9 +52,7 @@
                   <b-link
                     to="/"
                     router-tag="b-nav-item"
-                  >
-                    
-                  </b-link>
+                  />
 
                   <b-link
                     to="/nutrition"
@@ -71,9 +64,7 @@
                   <b-link
                     to="/"
                     router-tag="b-nav-item"
-                  >
-                    
-                  </b-link>
+                  />
 
                   <b-link
                     to="/bookings"
@@ -85,9 +76,7 @@
                   <b-link
                     to="/"
                     router-tag="b-nav-item"
-                  >
-                    
-                  </b-link>
+                  />
 
                   <b-link
                     to="/contact"
@@ -95,7 +84,6 @@
                   >
                     CONTACT
                   </b-link>
-
                 </b-navbar-nav>
               </b-collapse>
             </b-navbar>

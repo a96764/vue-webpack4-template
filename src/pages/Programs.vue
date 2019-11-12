@@ -1,35 +1,42 @@
 <template>
-<div>
-  <b-card-group deck>
-    <b-card title="Title" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-      <b-card-text>
-        This is a wider card with supporting text below as a natural lead-in to additional content.
-        This content is a little bit longer.
-      </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
-
-    <b-card title="Title" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-      <b-card-text>
-        This card has supporting text below as a natural lead-in to additional content.
-      </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
-
-    <b-card title="Disconnect and Relax" img-src="http://www.worldofwanderlust.com/wp-content/uploads/2018/08/byron-13.jpg" img-alt="Relax" img-top>
-      <b-card-text>
-        This is a wider card with supporting text below as a natural lead-in to additional content.
-        This card has even longer content than the first to show that equal height action.
-      </b-card-text>
-      <template v-slot:footer>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </template>
-    </b-card>
-  </b-card-group>
-</div> 
+  <div>
+    <li
+      v-for="program in programs"
+      :key="program"
+    >
+      <div>
+        <b-card-group deck>
+          <b-card
+            title={{ program.name }}
+            img-src="program.img"
+            img-alt="Image"
+            img-top
+          >
+            <b-card-text>
+              {{ program.text}}
+            </b-card-text>
+            
+          </b-card>
+          
+        </b-card-group>
+      </div>
+    </li>
+  </div>
 </template>
 
+<script>
+export default {
+  data: function () {
+    return {
+      programs: []
+    }
+  },
+  created: function () {
+    fetch('https://api.myjson.com/bins/ok3yi')
+      .then(response => response.json())
+      .then(json => {
+        this.programs = json.programs
+      })
+  }
+}
+</script>

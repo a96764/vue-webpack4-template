@@ -26,8 +26,8 @@ const routes = [
   },
 
   {
-      path: '/nutrition',
-      component: Nutrition
+    path: '/nutrition',
+    component: Nutrition
   },
 
   {
@@ -38,7 +38,7 @@ const routes = [
   {
     path: '/contact',
     component: Contact
-  },
+  }
 
 ]
 

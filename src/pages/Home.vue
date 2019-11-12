@@ -15,9 +15,13 @@
       @sliding-end="onSlideEnd"
     >
       <b-carousel-slide img-src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
-        <div class="d-flex justify-content-xl-center">
-          <h1>Onga Wellness Resort</h1>
-        </div>
+        <b-container>
+          <b-row>
+            <b-col>
+              <h1>Onga Wellness Resort</h1>
+            </b-col>
+          </b-row>
+        </b-container>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://i1.wp.com/activenorcal.com/wp-content/uploads/2018/05/L2.jpg?fit=1500%2C843&ssl=1" />
