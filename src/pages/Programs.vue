@@ -7,17 +7,15 @@
       <div>
         <b-card-group deck>
           <b-card
-            title={{ program.name }}
-            img-src="program.img"
+            :title="program.name"
+            :img-src="program.img"
             img-alt="Image"
             img-top
           >
             <b-card-text>
-              {{ program.text}}
+              {{ program.text }}
             </b-card-text>
-            
           </b-card>
-          
         </b-card-group>
       </div>
     </li>

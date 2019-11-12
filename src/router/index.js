@@ -7,6 +7,8 @@ import Programs from 'pages/Programs'
 import Nutrition from 'pages/Nutrition'
 import Bookings from 'pages/Bookings'
 import Contact from 'pages/Contact'
+import Login from 'pages/Login'
+import Register from 'pages/Register'
 
 Vue.use(Router)
 
@@ -38,6 +40,16 @@ const routes = [
   {
     path: '/contact',
     component: Contact
+  },
+
+  {
+    path: '/login',
+    component: Login
+  },
+
+  {
+    path: '/register',
+    component: Register
   }
 
 ]

@@ -84,6 +84,30 @@
                   >
                     CONTACT
                   </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  />
+
+                  <b-link
+                    to="/login"
+                    router-tag="b-nav-item"
+                  >
+                    LOGIN
+                  </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  />
+
+                  <b-link
+                    to="/register"
+                    router-tag="b-nav-item"
+                  >
+                    REGISTER
+                  </b-link>
                 </b-navbar-nav>
               </b-collapse>
             </b-navbar>
