@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import Home from 'pages/Home'
 import About from 'pages/About'
 import Programs from 'pages/Programs'
-import Nutrition from 'pages/Nutrition'
+import Create from 'pages/Create'
 import Contact from 'pages/Contact'
 import Login from 'pages/Login'
 import Register from 'pages/Register'
@@ -27,8 +27,8 @@ const routes = [
   },
 
   {
-    path: '/nutrition',
-    component: Nutrition
+    path: '/create',
+    component: Create
   },
 
   {

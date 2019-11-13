@@ -9,6 +9,8 @@
           <b-card
             :title="program.name"
             :img-src="program.img"
+            img-width="program.width"
+            img-height="program.height"
             img-alt="Image"
             img-top
           >
@@ -32,7 +34,7 @@ export default {
     }
   },
   created: function () {
-    fetch('https://api.myjson.com/bins/ok3yi')
+    fetch('https://api.myjson.com/bins/w9rem')
       .then(response => response.json())
       .then(json => {
         this.programs = json.programs

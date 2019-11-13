@@ -55,10 +55,10 @@
                   />
 
                   <b-link
-                    to="/nutrition"
+                    to="/create"
                     router-tag="b-nav-item"
                   >
-                    NUTRITION
+                    CREATE YOUR WELLNESS PROGRAM
                   </b-link>
 
                   <b-link
