@@ -15,6 +15,14 @@
             <b-card-text>
               {{ program.text }}
             </b-card-text>
+
+            <b-button
+            variant="dark"
+            href="#/register"
+                >
+                  Reserve your retreat
+                </b-button>
+
           </b-card>
         </b-col-4>
         <b-row />
