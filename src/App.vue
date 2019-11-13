@@ -67,18 +67,6 @@
                   />
 
                   <b-link
-                    to="/bookings"
-                    router-tag="b-nav-item"
-                  >
-                    BOOKINGS
-                  </b-link>
-
-                  <b-link
-                    to="/"
-                    router-tag="b-nav-item"
-                  />
-
-                  <b-link
                     to="/contact"
                     router-tag="b-nav-item"
                   >

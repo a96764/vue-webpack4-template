@@ -22,12 +22,6 @@
           <h1>ONGA</h1>
           <h2>Wellness Resort</h2>
         </hgroup>
-        <button
-          class="btn btn-dark btn-lg"
-          role="button"
-        >
-          Bookings
-        </button>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://i1.wp.com/activenorcal.com/wp-content/uploads/2018/05/L2.jpg?fit=1500%2C843&ssl=1" />
