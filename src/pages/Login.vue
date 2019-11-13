@@ -25,7 +25,7 @@
       </b-form-group>
       <b-button
         type="submit"
-        variant="primary"
+        variant="dark"
       >
         Log in
       </b-button>

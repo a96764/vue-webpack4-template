@@ -9,8 +9,6 @@
           <b-card
             :title="program.name"
             :img-src="program.img"
-            img-width="program.width"
-            img-height="program.height"
             img-alt="Image"
             img-top
           >
@@ -42,3 +40,5 @@ export default {
   }
 }
 </script>
+
+
