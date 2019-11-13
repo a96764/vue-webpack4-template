@@ -2,7 +2,7 @@
   <div>
     <b-container>
       <b-row>
-        <b-col-6
+        <b-col-4
           v-for="program in programs"
           :key="program"
         >
@@ -16,9 +16,8 @@
               {{ program.text }}
             </b-card-text>
           </b-card>
-          </b-vol-4>
-          <b-row />
-        </b-col-6>
+        </b-col-4>
+        <b-row />
       </b-row>
     </b-container>
   </div>
@@ -40,5 +39,3 @@ export default {
   }
 }
 </script>
-
-

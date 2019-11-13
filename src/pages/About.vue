@@ -36,8 +36,6 @@
           Onga is proud to be a self-sustaining retreat that continuously celebrates and draws from it’s a unique and inspiring location. We’ve merged ancient traditions with modern technology to become an industry-leading example of earth-friendly design. From our organic produce grown onsite and stored in ambient, earth-cooled cellars, to our state-of-the-art solar and hydro energy system, each wellness journey leaves no trace.
         </p>
       </b-media>
-
-      </b-media>
       <br>
       <h1>Our Team</h1>
       <br>

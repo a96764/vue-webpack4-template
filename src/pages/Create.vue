@@ -1,35 +1,44 @@
 <template>
-  <div class="full-width center-content">
-    <b-form @submit="onSubmit">
-      <b-form-group
-        id="input-group-email"
-        label="Email:"
-        label-for="input-email"
-      >
-        <b-form-input
-          id="input-email"
-          v-model="form.email"
-          required
-        />
-      </b-form-group>
-      <b-form-group
-        id="input-group-password"
-        label="Password:"
-        label-for="input-password"
-      >
-        <b-input
-          id="input-password"
-          v-model="form.password"
-          type="password"
-        />
-      </b-form-group>
-      <b-button
-        type="submit"
-        variant="dark"
-      >
-        Log in
-      </b-button>
-    </b-form>
+  <div>
+    <b-alert show>
+      Please Login in order to personalize your wellness retreat. <div>
+        <b-link href="/register">
+          If you do not have an account click here to register.
+        </b-link>
+      </div>
+    </b-alert>
+    <div class="full-width center-content">
+      <b-form @submit="onSubmit">
+        <b-form-group
+          id="input-group-email"
+          label="Email:"
+          label-for="input-email"
+        >
+          <b-form-input
+            id="input-email"
+            v-model="form.email"
+            required
+          />
+        </b-form-group>
+        <b-form-group
+          id="input-group-password"
+          label="Password:"
+          label-for="input-password"
+        >
+          <b-input
+            id="input-password"
+            v-model="form.password"
+            type="password"
+          />
+        </b-form-group>
+        <b-button
+          type="submit"
+          variant="dark"
+        >
+          Log in
+        </b-button>
+      </b-form>
+    </div>
   </div>
 </template>
 
