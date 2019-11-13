@@ -3,15 +3,27 @@
     <!--Section: Contact v.2-->
     <section class="mb-4">
       <!--Section heading-->
-      <h2 class="h1-responsive font-weight-bold text-center my-4">
+      <div>
+  <b-card
+    overlay
+    img-src="https://i.pinimg.com/originals/1e/df/a3/1edfa3ce874c318c471aabea9b515535.jpg"
+    img-alt="Card Image"
+    text-variant="white"
+    
+  >
+    <b-card-text>
+    <h2 class="h1-responsive font-weight-bold text-center my-4">
         Contact us
       </h2>
-      <!--Section description-->
       <p class="text-center w-responsive mx-auto mb-5">
         Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.
       </p>
+    </b-card-text>
+  </b-card>
+</div>
 
+<hr>
       <div class="row">
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
@@ -99,7 +111,7 @@
 
           <div class="text-center text-md-left">
             <a
-              class="btn btn-primary"
+              class="btn btn-info"
               onclick="document.getElementById('contact-form').submit();"
             >Send</a>
           </div>
@@ -112,7 +124,7 @@
           <ul class="list-unstyled mb-0">
             <li>
               <i class="fas fa-map-marker-alt fa-2x" />
-              <p>123 Rue Croissant 75015, Paris</p>
+              <p>Via Lungolago Conca d'Oro, 11, 38069 Nago-Torbole TN, Italy</p>
             </li>
 
             <li>
@@ -122,7 +134,7 @@
 
             <li>
               <i class="fas fa-envelope mt-4 fa-2x" />
-              <p>contact@airbar.com</p>
+              <p>retreat@onga.com</p>
             </li>
           </ul>
         </div>

@@ -51,7 +51,7 @@
               />
             </template>
             <h5 class="mt-0 mb-1">
-              List-based media object
+              Chef Juanito Juarez
             </h5>
             <p class="mb-0">
               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -66,15 +66,15 @@
           >
             <template v-slot:aside>
               <b-img
-                blank
-                blank-color="#cba"
-                width="64"
+                src=https://www.witseducation.com/fit/wp-content/uploads/2014/12/lifestyle-wellness-coaching-trainer.jpg
+                width="200"
+                height="250"
                 alt="placeholder"
               />
             </template>
 
             <h5 class="mt-0 mb-1">
-              List-based media object
+              Phillipe Babum
             </h5>
             <p class="mb-0">
               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -86,15 +86,15 @@
           <b-media tag="li">
             <template v-slot:aside>
               <b-img
-                blank
-                blank-color="#bac"
-                width="64"
+                src="https://cdn.shopify.com/s/files/1/0942/6160/files/yoga-instructor-outdoors-fitness.jpg?v=1547634660"
+                width="300"
+                height="200"
                 alt="placeholder"
               />
             </template>
 
             <h5 class="mt-0 mb-1">
-              List-based media object
+              Leila Buckerson
             </h5>
             <p class="mb-0">
               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.

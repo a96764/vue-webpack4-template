@@ -18,7 +18,7 @@
 
             <b-button
             variant="dark"
-            href="#/register"
+            href="#/create"
                 >
                   Reserve your retreat
                 </b-button>
