@@ -27,93 +27,23 @@
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
           <form
-            id="contact-form"
-            name="contact-form"
-            action="mail.php"
-            method="POST"
-          >
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input
-                    id="name"
-                    type="text"
-                    name="name"
-                    class="form-control"
-                  >
-                  <label
-                    for="name"
-                    class=""
-                  >Your name</label>
-                </div>
-              </div>
-              <!--Grid column-->
+  action="https://formspree.io/xleeoqzl"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
 
-              <!--Grid column-->
-              <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input
-                    id="email"
-                    type="text"
-                    name="email"
-                    class="form-control"
-                  >
-                  <label
-                    for="email"
-                    class=""
-                  >Your email</label>
-                </div>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
+  <!-- your other form fields go here -->
 
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="md-form mb-0">
-                  <input
-                    id="subject"
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                  >
-                  <label
-                    for="subject"
-                    class=""
-                  >Subject</label>
-                </div>
-              </div>
-            </div>
-            <!--Grid row-->
-
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-md-12">
-                <div class="md-form">
-                  <textarea
-                    id="message"
-                    type="text"
-                    name="message"
-                    rows="2"
-                    class="form-control md-textarea"
-                  />
-                  <label for="message">Your message</label>
-                </div>
-              </div>
-            </div>
-            <!--Grid row-->
-          </form>
-
-          <div class="text-center text-md-left">
-            <a
-              class="btn btn-info"
-              onclick="document.getElementById('contact-form').submit();"
-            >Send</a>
-          </div>
+  <button class="btn btn-info" type="submit">Send</button>
+</form>
+          
           <div class="status" />
         </div>
         <!--Grid column-->
@@ -143,3 +73,28 @@
     <!--Section: Contact v.2-->
   </div>
 </template>
+
+<style>
+form {
+    max-width: 450px;
+    margin: 0 auto 100px;
+}
+label {
+    display: block;
+    margin-bottom: 100px;
+}
+span {
+    display: block;
+}
+.info {
+    label {
+        width: 100%;
+        padding-right: 10px;
+        float: left;
+    }
+}
+input, textarea {
+    border: 3px solid;
+    width: 100%;
+}
+</style>
