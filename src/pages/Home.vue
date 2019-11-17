@@ -5,7 +5,7 @@
       <ul>
         <h1
           v-if="user"
-          style="font-family:Snell Roundhand"
+          style="font-family:papyrus"
         >
           Hello {{ user.name }} !
         </h1>
