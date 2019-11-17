@@ -7,6 +7,7 @@ import Programs from 'pages/Programs'
 import Create from 'pages/Create'
 import Contact from 'pages/Contact'
 import Login from 'pages/Login'
+import Logout from 'pages/Logout'
 import Register from 'pages/Register'
 
 Vue.use(Router)
@@ -39,6 +40,11 @@ const routes = [
   {
     path: '/login',
     component: Login
+  },
+
+  {
+      path: '/logout',
+      component: Logout
   },
 
   {

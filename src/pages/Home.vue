@@ -3,11 +3,11 @@
   <div>
   <div class="full-width center-content">
     <ul>
-      <li
+      <h1 style = "font-family:cursive"
         v-if="user"
       >
-        {{ user.name }}
-      </li>
+       Hello {{ user.name }} !
+      </h1>
     </ul>
   </div>
     <b-carousel
@@ -69,7 +69,7 @@ export default {
     }
   },
   created: function () {
-    fetch('https://api.myjson.com/bins/a3wyt')
+    fetch('https://api.myjson.com/bins/17yade')
       .then(response => response.json())
       .then(json => {
         this.products = json.products

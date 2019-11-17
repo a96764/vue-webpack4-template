@@ -50,17 +50,7 @@ export default {
   },
   methods: {
     onSubmit () {
-      let myjson = [{ // should be retrieved from the session storage which is intialized with the JSON.parse og myjson
-        email: '1',
-        password: '2',
-        name: '3'
-      },
-      {
-        email: 'a',
-        password: 'b',
-        name: 'c'
-      }
-      ]
+      let myjson = 'https://api.myjson.com/bins/17yade'
       let email = this.form.email
       let password = this.form.password
       sessionStorage.user = JSON.stringify(myjson.find(function (user) { return ((user.email === email) && (user.password === password)) }))

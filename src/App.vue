@@ -91,6 +91,18 @@
                   />
 
                   <b-link
+                    to="/logout""
+                    router-tag="b-nav-item"
+                >
+                    LOGOUT 
+                </b-link>
+
+                  <b-link
+                    to="/"
+                    router-tag="b-nav-item"
+                  />
+
+                  <b-link
                     to="/register"
                     router-tag="b-nav-item"
                   >
