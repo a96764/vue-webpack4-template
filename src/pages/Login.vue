@@ -56,14 +56,14 @@ export default {
           this.user = json.user
         })
         .then(() => {
-        let myjson= 'https://api.myjson.com/bins/17yade'           
+          let myjson = 'https://api.myjson.com/bins/17yade'
           let email = this.form.email
           let password = this.form.password
           sessionStorage.user = JSON.stringify(this.user.find(function (user) {
             return ((user.email === email) && (user.password === password))
           }))
           console.log(sessionStorage.user)
-          this.$router.push('/')
+          this.$router.push('/createloggedin')
         })
     }
   }

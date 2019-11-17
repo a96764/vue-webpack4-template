@@ -5,6 +5,7 @@ import Home from 'pages/Home'
 import About from 'pages/About'
 import Programs from 'pages/Programs'
 import Create from 'pages/Create'
+import CreateLoggedin from 'pages/CreateLoggedin'
 import Contact from 'pages/Contact'
 import Login from 'pages/Login'
 import Logout from 'pages/Logout'
@@ -30,6 +31,11 @@ const routes = [
   {
     path: '/create',
     component: Create
+  },
+
+  {
+    path: '/createloggedin',
+    component: CreateLoggedin
   },
 
   {

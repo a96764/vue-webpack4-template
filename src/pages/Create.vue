@@ -59,11 +59,21 @@ export default {
   },
   methods: {
     onSubmit () {
-      let myjson = 'https://api.myjson.com/bins/17yade'
-      let email = this.form.email
-      let password = this.form.password
-      sessionStorage.user = JSON.stringify(myjson.find(function (user) { return ((user.email === email) && (user.password === password)) }))
-      this.$router.push('/')
+      fetch('https://api.myjson.com/bins/17yade')
+        .then(response => response.json())
+        .then(json => {
+          this.user = json.user
+        })
+        .then(() => {
+          let myjson = 'https://api.myjson.com/bins/17yade'
+          let email = this.form.email
+          let password = this.form.password
+          sessionStorage.user = JSON.stringify(this.user.find(function (user) {
+            return ((user.email === email) && (user.password === password))
+          }))
+          console.log(sessionStorage.user)
+          this.$router.push('/createloggedin')
+        })
     }
   }
 }
