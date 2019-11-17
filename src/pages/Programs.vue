@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <b-container>
@@ -17,12 +18,11 @@
             </b-card-text>
 
             <b-button
-            variant="dark"
-            href="#/create"
-                >
-                  Reserve your retreat
-                </b-button>
-
+              variant="dark"
+              href="#/create"
+            >
+              Reserve your retreat
+            </b-button>
           </b-card>
         </b-col-4>
         <b-row />

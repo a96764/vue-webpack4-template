@@ -66,7 +66,7 @@
           >
             <template v-slot:aside>
               <b-img
-                src=https://www.witseducation.com/fit/wp-content/uploads/2014/12/lifestyle-wellness-coaching-trainer.jpg
+                src="https://www.witseducation.com/fit/wp-content/uploads/2014/12/lifestyle-wellness-coaching-trainer.jpg"
                 width="200"
                 height="250"
                 alt="placeholder"

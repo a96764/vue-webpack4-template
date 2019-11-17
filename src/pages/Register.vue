@@ -1,3 +1,4 @@
 <template>
-<h1> REGISTRATION UNDER CONSTRUCTION.</h1>
+  <h1> REGISTRATION UNDER CONSTRUCTION.</h1>
 </template>
+

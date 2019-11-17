@@ -4,26 +4,25 @@
     <section class="mb-4">
       <!--Section heading-->
       <div>
-  <b-card
-    overlay
-    img-src="https://i.pinimg.com/originals/1e/df/a3/1edfa3ce874c318c471aabea9b515535.jpg"
-    img-alt="Card Image"
-    text-variant="white"
-    
-  >
-    <b-card-text>
-    <h2 class="h1-responsive font-weight-bold text-center my-4">
-        Contact us
-      </h2>
-      <p class="text-center w-responsive mx-auto mb-5">
-        Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.
-      </p>
-    </b-card-text>
-  </b-card>
-</div>
+        <b-card
+          overlay
+          img-src="https://i.pinimg.com/originals/1e/df/a3/1edfa3ce874c318c471aabea9b515535.jpg"
+          img-alt="Card Image"
+          text-variant="white"
+        >
+          <b-card-text>
+            <h2 class="h1-responsive font-weight-bold text-center my-4">
+              Contact us
+            </h2>
+            <p class="text-center w-responsive mx-auto mb-5">
+              Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+              a matter of hours to help you.
+            </p>
+          </b-card-text>
+        </b-card>
+      </div>
 
-<hr>
+      <hr>
       <div class="row">
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
