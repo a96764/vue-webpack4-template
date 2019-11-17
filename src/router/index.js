@@ -43,8 +43,8 @@ const routes = [
   },
 
   {
-      path: '/logout',
-      component: Logout
+    path: '/logout',
+    component: Logout
   },
 
   {

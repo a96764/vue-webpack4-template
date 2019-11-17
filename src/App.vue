@@ -91,11 +91,11 @@
                   />
 
                   <b-link
-                    to="/logout""
+                    to="/logout"
                     router-tag="b-nav-item"
-                >
-                    LOGOUT 
-                </b-link>
+                  >
+                    LOGOUT
+                  </b-link>
 
                   <b-link
                     to="/"

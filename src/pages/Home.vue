@@ -1,15 +1,16 @@
 
 <template>
   <div>
-  <div class="full-width center-content">
-    <ul>
-      <h1 style = "font-family:cursive"
-        v-if="user"
-      >
-       Hello {{ user.name }} !
-      </h1>
-    </ul>
-  </div>
+    <div class="full-width center-content">
+      <ul>
+        <h1
+          v-if="user"
+          style="font-family:Snell Roundhand"
+        >
+          Hello {{ user.name }} !
+        </h1>
+      </ul>
+    </div>
     <b-carousel
       id="carousel-1"
       v-model="slide"
