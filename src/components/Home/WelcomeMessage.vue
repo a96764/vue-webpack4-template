@@ -7,9 +7,7 @@
       :interval="4000"
       controls
       indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
+      background="black"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -18,16 +16,10 @@
         class="hero"
         img-src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
       >
-        <hgroup>
+        <hgroup class="overlay">
           <h1>ONGA</h1>
           <h2>Wellness Resort</h2>
         </hgroup>
-        <button
-          class="btn btn-dark btn-lg"
-          role="button"
-        >
-          Bookings
-        </button>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://i1.wp.com/activenorcal.com/wp-content/uploads/2018/05/L2.jpg?fit=1500%2C843&ssl=1" />
@@ -88,14 +80,10 @@ export default {
     top: 50%;
     left: 50%;
     z-index: 3;
-    color: #fff;
+    color: black;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
+        transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
     font-family: papyrus;
@@ -134,22 +122,7 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #080d15;
-    opacity: .7;
-}
-
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    outline: none;
-    margin: 20px auto;
+    opacity: 1;
 }
 
 /********************************/
