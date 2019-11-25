@@ -27,23 +27,31 @@
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
           <form
-  action="https://formspree.io/xleeoqzl"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+            action="https://formspree.io/xleeoqzl"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input
+                type="text"
+                name="_replyto"
+              >
+            </label>
+            <label>
+              Your message:
+              <textarea name="message" />
+            </label>
 
-  <!-- your other form fields go here -->
+            <!-- your other form fields go here -->
 
-  <button class="btn btn-info" type="submit">Send</button>
-</form>
-          
+            <button
+              class="btn btn-info"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+
           <div class="status" />
         </div>
         <!--Grid column-->

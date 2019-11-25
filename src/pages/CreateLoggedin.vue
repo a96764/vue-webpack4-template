@@ -1,15 +1,15 @@
 <template>
-<div class="full-width center-content">
-      <ul>
-        <h1
-          v-if="user"
-          style="font-family:papyrus"
-        >
-          Hello {{ user.name }} !
-        </h1>
-        <p>We are working on the page. It will be available soon!</p>
-      </ul>
-    </div>
+  <div class="full-width center-content">
+    <ul>
+      <h1
+        v-if="user"
+        style="font-family:papyrus"
+      >
+        Hello {{ user.name }} !
+      </h1>
+      <p>We are working on the page. It will be available soon!</p>
+    </ul>
+  </div>
 </template>
 
 <script>
