@@ -56,7 +56,6 @@ export default {
           this.user = json.user
         })
         .then(() => {
-          let myjson = 'https://api.myjson.com/bins/17yade'
           let email = this.form.email
           let password = this.form.password
           sessionStorage.user = JSON.stringify(this.user.find(function (user) {
