@@ -53,9 +53,9 @@ export default {
       this.$axios.post('/users/login', (this.email, this.password))
         .then(response => {
           console.log(response)
-          alert(response.data.data.message)
-          sessionStorage.userId = JSON.stringify(response.data.id)
-          sessionStorage.userName = JSON.stringify(response.data.name)
+          alert(response.data.data.name)
+          sessionStorage.userId = JSON.stringify(response.data.data.id)
+          sessionStorage.userName = JSON.stringify(response.data.data.name)
         })
       this.$router.push('/createloggedin')
     }
