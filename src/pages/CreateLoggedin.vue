@@ -7,30 +7,30 @@
       >
         Hello {{ user.name }} !
       </h1>
-      <p>We are working on the page. It will be available soon!</p>
+      <h1>Hello!</h1>
+       <div>
+    <b-form-select v-model="selected" :options="options"></b-form-select>
+
+    <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
+  </div>
     </ul>
   </div>
 </template>
 
 <script>
-export default {
-  data: function () {
-    return {
-      user: undefined
-    }
-  },
-  created: function () {
-    fetch('https://api.myjson.com/bins/17yade')
-      .then(response => response.json())
-      .then(json => {
-        this.products = json.products
-      })
-  },
-  mounted: function () {
-    let v = sessionStorage.user
-    if (v !== 'undefined') {
-      this.user = JSON.parse(v)
+
+  export default {
+    data() {
+      return {
+        selected: null,
+        options: [
+          { value: null, text: 'Please select the program' },
+          { value: 'Fitness', text: 'Fitness' },
+          { value: 'Yoga', text: 'Yoga' },
+          { value: 'Relaxation' , text: 'Relaxation' },
+          { value: 'Weight Loss', text: 'Weight Loss', disabled: true }
+        ]
+      }
     }
   }
-}
 </script>
