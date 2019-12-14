@@ -53,19 +53,14 @@ export default {
           sessionStorage.userId = JSON.stringify(response.data.data.id)
           sessionStorage.userName = JSON.stringify(response.data.data.name)
           console.log(sessionStorage)
-          if(response.data.data.id){
-            alert('Hello '+sessionStorage.userName)
+          if (response.data.data.id) {
+            alert('Hello ' + sessionStorage.userName)
             this.$router.push('/createloggedin')
-          }
-          else
-            alert("User does not exist. Try again")
-          
+          } else { alert('User does not exist. Try again') }
         })
-
-        
     }
-  }}
-        
+  } }
+
 </script>
 
 <style>

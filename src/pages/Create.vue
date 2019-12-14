@@ -8,75 +8,72 @@
       </div>
     </b-alert>
 
-    <div class="form-1">
-      <b-form @submit="onSubmit">
-        <b-form-group
-          id="input-group-email"
-          label="Email:"
-          label-for="input-email"
-        >
-          <b-form-input
-            id="input-email"
-            v-model="form.email"
-            class="field"
-            required
-            placeholder="Email address"
-          />
-        </b-form-group>
-        <b-form-group
-          id="input-group-password"
-          label="Password:"
-          label-for="input-password"
-        >
-          <b-input
-            id="input-password"
-            v-model="form.password"
-            type="password"
-            required
-            placeholder="Password"
-          />
-        </b-form-group>
-        <b-button
-          type="submit"
-          variant="dark"
-        >
-          Log in
-        </b-button>
-      </b-form>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <form @submit="formSubmit">
+                <strong>Email:</strong>
+                <input
+                  v-model="email"
+                  type="text"
+                  class="form-control"
+                >
+
+                <strong>Password:</strong>
+                <input
+                  v-model="password"
+                  type="password"
+                  class="form-control"
+                >
+
+                <button class="btn btn-success">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data: function () {
+  data () {
     return {
-      form: {
-        email: '',
-        password: ''
-      }
+      email: '',
+      password: ''
     }
   },
+  mounted () {
+    console.log('Component mounted.')
+  },
   methods: {
-    onSubmit () {
-      fetch('https://api.myjson.com/bins/17yade')
-        .then(response => response.json())
-        .then(json => {
-          this.user = json.user
-        })
-        .then(() => {
-          let email = this.form.email
-          let password = this.form.password
-          sessionStorage.user = JSON.stringify(this.user.find(function (user) {
-            return ((user.email === email) && (user.password === password))
-          }))
-          console.log(sessionStorage.user)
-          this.$router.push('/createloggedin')
+    formSubmit (e) {
+      e.preventDefault()
+      this.$axios.post('/users/login', {
+        password: this.password,
+        email: this.email
+      })
+        .then(response => {
+          console.log(response)
+          sessionStorage.userId = JSON.stringify(response.data.data.id)
+          sessionStorage.userName = JSON.stringify(response.data.data.name)
+          console.log(sessionStorage)
+          if (response.data.data.id) {
+            alert('Hello ' + sessionStorage.userName)
+            this.$router.push('/createloggedin')
+          } else { alert('User does not exist. Try again') }
         })
     }
-  }
-}
+  } }
+
 </script>
+
+<style>
 
 <style>
 .form-1 {
