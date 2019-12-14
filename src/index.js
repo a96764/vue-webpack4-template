@@ -4,10 +4,14 @@ import App from './App'
 
 import 'assets/css/app.styl'
 
+import axios from 'axios'
+
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(BootstrapVue)
+const axiosConfig = { baseURL: 'https://polar-chamber-10868.herokuapp.com' }
+Vue.prototype.$axios = axios.create(axiosConfig)
 
 new Vue({
   router,

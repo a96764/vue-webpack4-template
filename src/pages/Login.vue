@@ -50,20 +50,14 @@ export default {
   },
   methods: {
     onSubmit () {
-      fetch('https://api.myjson.com/bins/17yade')
-        .then(response => response.json())
-        .then(json => {
-          this.user = json.user
+      this.$axios.post('/users/login', (this.email, this.password))
+        .then(response => {
+          console.log(response)
+          alert(response.data.data.message)
+          sessionStorage.userId = JSON.stringify(response.data.id)
+          sessionStorage.userName = JSON.stringify(response.data.name)
         })
-        .then(() => {
-          let email = this.form.email
-          let password = this.form.password
-          sessionStorage.user = JSON.stringify(this.user.find(function (user) {
-            return ((user.email === email) && (user.password === password))
-          }))
-          console.log(sessionStorage.user)
-          this.$router.push('/createloggedin')
-        })
+      this.$router.push('/createloggedin')
     }
   }
 }
